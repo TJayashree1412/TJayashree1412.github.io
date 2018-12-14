@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <title>Bootstrap Example</title>
+
+  <meta charset="utf-8">
+
+  <meta name="description" content="Travellers Destination">
+  <meta name="keywords" content="HTML,CSS,JavaScript">
+  <meta name="T Jayashree Santhoshi" content="Travellers Destination">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU"
+    crossorigin="anonymous">
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon" />
+    <link href="https://fonts.googleapis.com/css?family=Charm" rel="stylesheet"> 
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.min.css">
+</head>
+
+<body>
+    <header class="fixed-header fixed-top bg-light">
+        <div id="cover-caption">
+            <div class="container-fluid">
+                <div class="col-sm-8" style="display:initial" font-size: >
+                    <b> Insight</b> <br>
+                    <small>A travellers destination</small>
+                </div>
+            </div>
+        </div>
+    <!-- navbar with fixed top-->
+    <nav class="navbar navbar-expand-lg navbar-light">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent"></div>
+      <ul class="navbar-nav mr-auto">
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <li class="nav-item">
+          <a class="nav-link" href="#">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Destinations</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Tour Packages</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Bookings</a>
+        </li>
+        <!-- dropdown menu-->
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+            Customised locations
+          </a>
+          <div class="dropdown-menu">
+            <a class="dropdown-item" href="#">Family</a>
+            <a class="dropdown-item" href="#">Friends</a>
+            <a class="dropdown-item" href="#">Solo</a>
+          </div>
+        </li>
+        <form class="form-inline my-2 my-lg-0">
+            <input class="form-control mr-sm-2" type="text" placeholder="Search">
+            <button class="btn btn-outline-success my-2 my-sm-0" type="submit"><span class="glyphicon glyphicon-search"></span></button>
+          </form>
+      </ul>
+    </div>
+    </nav>
+    </div>
+  </header>
+
+  <main>
+    <!--Carousel effect-->
+    <div id="carousell" class="carousel slide" data-ride="carousel">
+      <!-- Indicators -->
+      <ul class="carousel-indicators">
+        <li data-target="#demo" data-slide-to="0" class="active"></li>
+        <li data-target="#demo" data-slide-to="1"></li>
+        <li data-target="#demo" data-slide-to="2"></li>
+      </ul>
+      <!-- The slideshow -->
+      <div class="carousel-inner">
+
+        <div class="carousel-item active">
+          <img src="img/backgorund.jpg" alt="Travel quote" class="rounded" width="100%" height="400px" />
+          <div class="carousel-caption">
+            <h3>Travelling is the best theraphy to busy schedule</h3>
+          </div>
+        </div>
+
+        <div class="carousel-item">
+          <img src="img/quote1.jpg" alt="Travel quote" class="rounded" width="100%" height="400px" />
+        </div>
+
+        <div class="carousel-item">
+          <img src="img/quote2.jpg" alt="Travel quote" class="rounded" width="100%" height="400px" />
+        </div>
+      </div>
+    </div>
+    <!-- Left and right controls -->
+    <a class="carousel-control-prev" href="#demo" data-slide="prev">
+      <span class="carousel-control-prev-icon"></span>
+    </a>
+    <a class="carousel-control-next" href="#demo" data-slide="next">
+      <span class="carousel-control-next-icon"></span>
+    </a>
+  </main>
+
+  <section class="gridFramework">
+    <h1>#Trending</h1>
+    <P>Vacations are here again!</P>
+  </section>
+
+  <!-- grid framework-->
+  <div class="row">
+    <div class="col images">
+      <div class="card">
+        <img src="img/Bali.jpeg" alt="Pura Ulun Danu Bratan, Hindu temple on Bratan Lake, Bali, Indonesia" height="300px"
+          class="rounded " />
+        <div class="card-body">
+          <h4 class="card-title">Pura Ulun Danu Bratan</h4>
+          <p class="card-text">Hindu temple on Bratan Lake, Bali, Indonesia.</p>
+          <button type="button" class="btn btn-info btn-lg btn-primary" data-toggle="modal" data-target="#myModal">More
+            Info</button>
+          <!-- Modal -->
+          <div class="modal fade" id="myModal" role="dialog">
+            <div class="modal-dialog">
+              <!-- Modal content-->
+              <div class="modal-content">
+                <div class="modal-header">
+                  <button type="button" class="close" data-dismiss="modal">&times;</button>
+                  <h4 class="modal-title">More Info</h4>
+                </div>
+                <div class="modal-body">
+                  <p>This temple is also called as Bali temple on the
+                    lake because it looks like floating when the Bratan river water rises.
+                    Lake Bratan is known as the Lake of Holy Mountain due to the fertility of
+                    this area. Located 1200 m above sea level, it has a cold tropical climate.
+                  </p>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="col images">
+      <div class="card">
+        <img src="img/amsterdam.jpeg" alt="Amsterdam, Netherlands" height="300px" class="rounded " />
+        <div class="card-body">
+          <h4 class="card-title">Amsterdam, Netherlands</h4>
+          <p class="card-text">This country, where light astonishes the visitor. </p>
+          <button type="button" class="btn btn-info btn-lg btn-primary" data-toggle="modal" data-target="#myModal">More
+            Info</button>
+
+          <!-- Modal -->
+          <div class="modal fade" id="myModal" role="dialog">
+            <div class="modal-dialog">
+
+              <!-- Modal content-->
+              <div class="modal-content">
+                <div class="modal-header">
+                  <button type="button" class="close" data-dismiss="modal">&times;</button>
+                  <h4 class="modal-title">More Info</h4>
+                </div>
+                <div class="modal-body">
+                  <p>The coveted European destination is as charming as they come thanks to its rich history,
+                    distinct architecture, stellar foodie scene and impressive art offerings.
+                    The Netherlands being the most densely populated country of the world has very interesting
+                    cities,
+                    beautifully preserved nature, and varied landscape, always fresh through the wind from the sea.
+                  </p>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="col images">
+      <div class="card">
+        <img src="img/italy.JPG" alt="Positano, Italy" height="300px" class="rounded" />
+        <div class="card-body">
+          <h4 class="card-title">Positano, Italy</h4>
+          <p class="card-text">The jewel in the Almafi Coast, is the legendary Italian resort.</p>
+          <button type="button" class="btn btn-info btn-lg btn-primary" data-toggle="modal" data-target="#myModal">More
+            Info</button>
+
+          <!-- Modal -->
+          <div class="modal fade" id="myModal" role="dialog">
+            <div class="modal-dialog">
+
+              <!-- Modal content-->
+              <div class="modal-content">
+                <div class="modal-header">
+                  <button type="button" class="close" data-dismiss="modal">&times;</button>
+                  <h4 class="modal-title">More Info</h4>
+                </div>
+                <div class="modal-body">
+                  <p>Dramatic, deluxe and more than a little dashing, Positano is the Amalfi Coast's
+                    front-cover splash, with vertiginous houses tumbling down to the sea in a cascade
+                    of sun-bleached peach, pink and terracotta.
+                  </p>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- jumbotron -->
+  <section class="info jumbotron">
+    <h2>India's best travel bloggers</h2>
+    <ol>
+      <li>Lakshmi Sharath</li>
+      <li>Shivnath</li>
+      <li>Mridula Dwivedi</li>
+      <li>Venkat Ganesh</li>
+      <li>Prasad Np</li>
+      <li>Dheeraj Sharma</li>
+      <li>Rachel Jones</li>
+    </ol>
+  </section>
+
+  <section class="container-fluid">
+    <!--tab pane-->
+    <!-- Nav tabs -->
+    <ul class="nav nav-tabs">
+      <li class="nav-item">
+        <a class="nav-link active" data-toggle="tab" href="#home">Home</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" data-toggle="tab" href="#menu1">Menu 1</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" data-toggle="tab" href="#menu2">Menu 2</a>
+      </li>
+    </ul>
+    <!-- Tab panes -->
+    <div class="tab-content">
+      <div class="tab-pane container active" id="home"><img src="img/shivling.png" width="100%" height="500px" /></div>
+      <div class="tab-pane container fade" id="menu1"><img src="img/shivling.png" width="100%" height="500px" /></div>
+      <div class="tab-pane container fade" id="menu2"><img src="img/shivling.png" width="100%" height="500px" /></div>
+    </div>
+  </section>
+</body>
+<br>
+<br>
+<!-- footer implemented-->
+<footer class="last text-align-center">
+  <a href="#">Privacy and Cookies </a>
+  <a href="#">Legal </a>
+  <a href="#">Advertise </a>
+  <a href="#">Help </a>
+  <a href="#">Feedback </a>
+  <i class="fab fa-instagram float-right"> </i>
+  <i class="fab fa-facebook-f float-right"></i>
+</footer>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+
+
+</html>
